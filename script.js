@@ -1,4 +1,3 @@
-// Exercise: Create a to do list application
 
 // todoList function used on button click to get user input and 
 function todoList() {
