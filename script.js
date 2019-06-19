@@ -44,9 +44,11 @@ function todoList() {
 	});
 };
 
+// Add the function to the click event
 document.getElementById('add-btn').addEventListener('click', todoList);
 
-input.addEventListener('keyup', function(event) {
+// Link the Enter key press on the input field to the click event
+document.getElementById('todoInput').addEventListener('keyup', function(event) {
     if (event.key === "Enter") {
 		event.preventDefault();
         document.getElementById('add-btn').click();
