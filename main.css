@@ -1,0 +1,19 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+    align-content: center;
+    background-color: bisque;
+    padding:20px;
+    padding-bottom: 150px;
+}
+
+.hide {
+    display: none;
+}
+
+.completed {
+    font-style: italic;
+    color: rgb(160, 159, 159);
+    text-decoration: line-through;
+
+}
