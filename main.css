@@ -7,13 +7,24 @@
     padding-bottom: 150px;
 }
 
-.hide {
-    display: none;
-}
+
 
 .completed {
     font-style: italic;
     color: rgb(160, 159, 159);
     text-decoration: line-through;
 
+}
+
+.removeButton {
+    color: white;
+    background-color: black;
+    text-transform: capitalize;
+    padding: 2%;
+    display: inline-block;
+    margin-left: 10%;
+}
+
+.hide {
+    display: none;
 }
