@@ -2,30 +2,27 @@
 // todoList function - to get user input and store user value
 function todoList() {
 	
-	var item    = document.getElementById('todoInput').value;// create a text node from the user input
-	var text    = document.createTextNode(item);// create a li tag
-	var newItem = document.createElement('li');// add the user input to the li tag
-	newItem.appendChild(text); // append the li to the html todoList id tag
-		if (item === '') {
+	var item    = document.getElementById('todoInput').value;// Create a text node from the user input
+	var text    = document.createTextNode(item);// Create a li tag
+	var newItem = document.createElement('li');// Add the user input to the li tag
+	newItem.appendChild(text); // Append the li to the html todoList id tag
+		if (item === '') {						// Make sure that empty field is not "submittable"
 			alert("Valamit be kell írnod!");
 	  	} else {
 			document.getElementById('todoList').appendChild(newItem);
 			newItem.className = 'newItem'; // Adds a class to the list items
 	  	}
 	
-
-	
 	// Create the remove button
 
-    var removeButton = document.createElement('button'); 
-    // Creates the button.
+    var removeButton = document.createElement('button'); // Creates the button.
     removeButton.textContent = 'Törlés'; // Sets its text.
-    
 	removeButton.className = 'removeButton'; // Adds a class to it.
-    	
-	document.getElementById('todoList').appendChild(removeButton) //Appends it to the list items
-
-	removeButton.addEventListener('click', function(){
+	if (item != '') {
+		document.getElementById('todoList').appendChild(removeButton) // Appends it to the list items
+	}
+	
+	removeButton.addEventListener('click', function(){   // Connect item removal to clicking Remove button
 		newItem.parentNode.removeChild(newItem);
 		removeButton.classList.add('hide');
 		completeButton.classList.add('hide')
@@ -33,12 +30,12 @@ function todoList() {
 
 	// Create the complete button
 	var completeButton = document.createElement('button'); // Creates the button.
-    
     completeButton.textContent = 'Kész van!'; // Sets its text.
-    
 	completeButton.className = 'completeButton'; // Adds a class to it.
-    	
-	document.getElementById('todoList').appendChild(completeButton); //Appends it to the list items
+		
+	if (item != '') {
+		document.getElementById('todoList').appendChild(completeButton); //Appends it to the list items
+	}
 
 	// hide the Complete button after it is pressed
 	completeButton.addEventListener('click', function(){

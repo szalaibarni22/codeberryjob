@@ -1,6 +1,4 @@
 
-
-
 .container {
     max-width: 600px;
     margin: auto;
@@ -14,11 +12,13 @@
 h1 {
     color: white;
 }
+
 .newItem {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 530;
     color:white;
+    margin-top: 2%;
     }
 
 #todoForm {
@@ -41,9 +41,6 @@ h1 {
     font-weight: 530;
     background-color: rgb(255, 80, 0);
 }
-
-
-
 
 .completed {
     font-style: italic;
