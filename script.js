@@ -10,8 +10,10 @@ function todoList() {
 	
 	newItem.appendChild(text); // append the li to the html todoList id tag
 	
-    
-    document.getElementById('todoList').appendChild(newItem)
+	
+	document.getElementById('todoList').appendChild(newItem);
+		
+	newItem.className = 'newItem'; // Adds a class to the list items
 	
 	// Create the remove button
 
@@ -43,7 +45,7 @@ function todoList() {
 		newItem.classList.add('completed');
 		completeButton.classList.add('hide');
 	});
-};
+};	// the todoList function closing tag is here
 
 // Add the function to the click event
 document.getElementById('add-btn').addEventListener('click', todoList);
