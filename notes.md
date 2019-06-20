@@ -24,8 +24,8 @@
 
 ## Problems occured during the building process
  - It's easy to make permanent buttons, but how to make them on the fly in JS?
- - Enter key is not working as clicking - WE MUST SOLVE THIS
- - We can add empty items to the list  - CHANGE THIS
+ 
+ - When added an if statement to prevent adding empty elements, it works, but the buttons show up after the alert
 
  ## Useful observations
  - It is essential wo understand child-parent relatoins to create this to-do list

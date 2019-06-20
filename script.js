@@ -3,17 +3,17 @@
 function todoList() {
 	
 	var item    = document.getElementById('todoInput').value;// create a text node from the user input
-	
 	var text    = document.createTextNode(item);// create a li tag
-	
 	var newItem = document.createElement('li');// add the user input to the li tag
-	
 	newItem.appendChild(text); // append the li to the html todoList id tag
+		if (item === '') {
+			alert("Valamit be kell írnod!");
+	  	} else {
+			document.getElementById('todoList').appendChild(newItem);
+			newItem.className = 'newItem'; // Adds a class to the list items
+	  	}
 	
-	
-	document.getElementById('todoList').appendChild(newItem);
-		
-	newItem.className = 'newItem'; // Adds a class to the list items
+
 	
 	// Create the remove button
 
@@ -50,9 +50,9 @@ function todoList() {
 // Add the function to the click event
 document.getElementById('add-btn').addEventListener('click', todoList);
 
-// Link the Enter key press on the input field to the click event - IT IS STILL NOT WORKING
-document.getElementById('todoInput').addEventListener('keyup', function(event) {
-    if (event.key === "Enter") {
+// Link the Enter key press on the input field to the click event
+document.getElementById('todoInput').addEventListener('keypress', function(event) {
+    if (event.keyCode == 13) {
 		event.preventDefault();
         document.getElementById('add-btn').click();
     }
