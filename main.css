@@ -7,10 +7,13 @@
     padding:20px;
     padding-bottom: 150px;
     display: table;
+    border: 5px solid rgb(233, 127, 77);
 }
 
 h1 {
     color: white;
+    font-size: 40px;
+    letter-spacing: 0.2em;
 }
 
 .newItem {
@@ -50,7 +53,6 @@ h1 {
 }
 
 .removeButton {
-    display: inline block;
     text-align: center;
     width: 30%;
     margin-top: 2%;
@@ -64,7 +66,6 @@ h1 {
 }
 
 .completeButton {
-    display: inline block;
     text-align: center;
     width: 30%;
     margin-top: 2%;

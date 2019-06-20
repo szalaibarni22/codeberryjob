@@ -22,7 +22,7 @@ function todoList() {
 		document.getElementById('todoList').appendChild(removeButton) // Appends it to the list items
 	}
 	
-	removeButton.addEventListener('click', function(){   // Connect item removal to clicking Remove button
+	removeButton.addEventListener('click', function(){   // Connect item removal to  Remove button click event
 		newItem.parentNode.removeChild(newItem);
 		removeButton.classList.add('hide');
 		completeButton.classList.add('hide')

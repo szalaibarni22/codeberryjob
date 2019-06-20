@@ -49,7 +49,18 @@
  - It's easy to make permanent buttons, but how to make them on the fly in JS?
  - buttons show up after the empty input field alert
 
- ## Useful observations
- - It is essential wo understand child-parent relatoins to create this to-do list
+## Used methods and teachable tools
+ - createElement()
+ - createTextNode()
+ - appendChild()
+ - removeChild()
+ - parentNode()
+ - .value
+ - className()
+ - classList()
+ - alert
+
+## Useful observations
+ - It is essential wo understand child-parent relations to create this to-do list
  - We should use other selector types to teach them, not only getElementById
  - The Remove and Complete buttons are going INSIDE the function which is connected to the Add button
