@@ -13,7 +13,7 @@ function todoList() {
 			newItem.className = 'newItem'; // Adds a class to the list items
 		  }
 		  
-	//Create the Remove button
+	// Create the Remove button
 	var removeButton = document.createElement('button'); // Creates the button.
 	removeButton.textContent = 'Törlés'; // Sets its text.
 	removeButton.className = 'removeButton'; // Adds a class to it.
@@ -30,9 +30,14 @@ function todoList() {
 		newItem.parentNode.removeChild(newItem);
 	});
 	
+	// Add complete class to list items
 	completeButton.addEventListener('click', function(){ // Add Completed class onclick of Complete button
 		newItem.classList.add('completed')
+
+	
 	})
+	
+	document.getElementById('todoInput').value = ''; // reset empty input field!
 
 };				// the todoList function closing tag is here!
 
