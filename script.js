@@ -22,6 +22,7 @@ function todoList() {
 		document.getElementById('todoList').appendChild(removeButton) // Appends it to the list items
 	}
 	
+	// Remove the element AND the button itself when the Remove button is clicked
 	removeButton.addEventListener('click', function(){   // Connect item removal to  Remove button click event
 		newItem.parentNode.removeChild(newItem);
 		removeButton.classList.add('hide');
@@ -37,12 +38,12 @@ function todoList() {
 		document.getElementById('todoList').appendChild(completeButton); //Appends it to the list items
 	}
 
-	// hide the Complete button after it is pressed
+	// cross the item's text and hide the Complete button after it is pressed
 	completeButton.addEventListener('click', function(){
 		newItem.classList.add('completed');
 		completeButton.classList.add('hide');
 	});
-};	// the todoList function closing tag is here
+};				// the todoList function closing tag is here
 
 // Add the function to the click event
 document.getElementById('add-btn').addEventListener('click', todoList);
